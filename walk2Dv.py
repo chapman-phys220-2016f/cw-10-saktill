@@ -59,6 +59,8 @@ def random_walk_2D(Np,ns,plot_step):
     # give numerical values to coordinate directions
     north = 1; south = 2; east = 3; west = 4
 
+
+    
     # amend each xpositions and ypositions based on the moves matrix,
     # depending on whether it randomly general north, south, east, or west
     for step in range(ns):
@@ -72,7 +74,8 @@ def random_walk_2D(Np,ns,plot_step):
             plt.plot(xpositions,ypositions,'ko')
             plt.title(["%d particles after %d steps" %(Np, step+1)])
             plt.axis([xymin,xymax,xymin,xymax])
-            plt.savefig("tmp_%03d.pdf"%(step+1))
+            plt.savefig("tmp_%03d.png"%(step+1))
+            plt.clf()
     return(xpositions,ypositions)
 
 def main(Np,ns,plot_step):

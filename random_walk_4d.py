@@ -38,7 +38,8 @@ def random_walk_4D(N,numStep,stepInt):
             plt.ylabel("Y Position")
             plt.axis([xymin,xymax,xymin,xymax])
             plt.pcolormesh(xpositions,ypositions,t,cmap="viridis")
-            plt.savefig("tmp_%03d.pdf"%(step+1))
+            plt.savefig("tmp_%03d.png"%(step+1))
+            plt.clf()
     return(xpositions,ypositions,zpositions,wpositions)
 
 def main():
