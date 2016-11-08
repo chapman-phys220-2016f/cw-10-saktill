@@ -6,7 +6,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def random_walk_2D_final(Np, ns):
-
+    """Function simulates a 2-D random walk given the number of particles and the
+    number of steps in the random walk."""
 	# initialize arrays for x and y components of position
     xpositions = np.zeros(Np)
     ypositions = np.zeros(Np)
